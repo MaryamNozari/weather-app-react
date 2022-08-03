@@ -21,6 +21,13 @@ function App() {
         {/* Learn React
         </a> */}
       </header>
+      <a
+        href="https://github.com/MaryamNozari/weather-app-react"
+        alt="github repository"
+        target="_blank"
+      >
+        github repository link
+      </a>
     </div>
   );
 }
