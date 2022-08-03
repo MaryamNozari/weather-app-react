@@ -28,6 +28,7 @@ function App() {
       >
         github repository link
       </a>
+      <h1>it is ok</h1>
     </div>
   );
 }
