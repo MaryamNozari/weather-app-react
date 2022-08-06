@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Search from "./Search";
 
@@ -25,10 +24,11 @@ function App() {
         href="https://github.com/MaryamNozari/weather-app-react"
         alt="github repository"
         target="_blank"
+        rel="noreferrer"
       >
         github repository link
       </a>
-      <h1>it is ok</h1>
+      {/* <h1>it is ok</h1> */}
     </div>
   );
 }
