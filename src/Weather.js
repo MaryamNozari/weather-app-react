@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 
+import WeatherInfo from "./WeatherInfo";
+
 export default function Weather(props) {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
@@ -14,7 +16,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
+      date: new Date(response.data.dt * 1000),
     });
   }
   function handleSubmit(event) {
@@ -52,29 +55,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         {form}
-        <h1>{weather.city}</h1>
-        <ul>
-          <li>{weather.date}</li>
-          <li className="text-capitalize">
-            Description: {weather.description}
-          </li>
-        </ul>
-        <div className="row">
-          <div className="col-6">
-            <img src={weather.icon} alt={weather.description} />
-
-            <span className="temperature">
-              {Math.round(weather.temperature)}
-            </span>
-            <span classsName="unit">°C</span>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>Humidity: {weather.humidity}%</li>
-              <li>Wind: {weather.wind}km/h</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weather} />
       </div>
     );
   else {
