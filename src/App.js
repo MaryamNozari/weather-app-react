@@ -12,6 +12,7 @@ export default function App() {
             alt="github repository"
             target="_blank"
             rel="noreferrer"
+            className="link-repo"
           >
             github repository link
           </a>
