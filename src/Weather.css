@@ -1,11 +1,16 @@
 .Weather {
-  font-family: arial, sans-serif;
+  font-family: Handlee;
   border: 1px solid #dadde1;
-  padding: 16px;
+  padding: 20px;
   border-radius: 4px;
   color: rgb(135, 135, 135);
+  margin: 20px 300px;
+  background-color: ;
 }
 
+.Weather body {
+  max-width: 60%;
+}
 .Weather h1 {
   font-size: 24px;
   font-weight: 100;
@@ -26,11 +31,10 @@
 }
 
 .Weather .temperature {
-  font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 64px;
-  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
   margin-left: 10px;
   /* display: inline-block;
   vertical-align: middle; */
@@ -50,4 +54,49 @@
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.Weather .search-input {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: #b3d7ff;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+
+.Weather .btn {
+  background: #885df1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+}
+
+.WeatherForecast .WeatherForecast-temperature-max {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
+}
+
+.WeatherForecast .WeatherForecast-temperature-min {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
+}
+
+.WeatherInfo .humidity ,.WeatherInfo .wind {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
 }

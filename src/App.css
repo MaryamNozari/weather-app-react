@@ -1,3 +1,8 @@
-.App .link-repo{
+.App footer {
   text-align: center;
+  font-family: handlee;
+}
+.App footer .link-repo,
+.App footer .link-netlify {
+  color: #885df1;
 }
